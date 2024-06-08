@@ -1,0 +1,15 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+
+    --cinza : #232121;
+    --branco:  #fff ; 
+    --preto : #000;
+    --azul: #1451EF;
+
+}

@@ -1,13 +1,17 @@
+import Home from "./pages/Home/Home"
+
+
+import "./assets/variaveis/variavel.css"
 
 
 
-
-function App() {
+const App = () => {
   
 
   return (
     <>
-      App
+     
+      <Home/>
     </>
   )
 }
