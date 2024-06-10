@@ -98,13 +98,43 @@ width: 70%;
   }
   .container {
     max-width: 1440px;
-    margin: auto;
-    padding:5rem 2rem ;
+    margin: auto ;
+    padding:20vh 2rem ;
+    
+     
+      
+    
 }
+
 .luz {
     position: relative;
     box-shadow: 0 0  1000px 50px #1653F2;
     z-index: -100;
+}
+#arrow {
+    
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza a seta verticalmente */
+    position: absolute;
+    top: 70%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige a centralização tanto horizontal quanto vertical */
+    cursor: pointer; 
+    animation: moveUpDown 2s infinite; /* Adiciona animação */
+}
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, calc(-50% - 10px)); /* Ajuste o valor de 10px conforme necessário */
+    }
+}
+
+#arrow img {
+   font-size: large;
 }
 
 

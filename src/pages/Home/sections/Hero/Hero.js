@@ -13,3 +13,5 @@ const initTyped = () => {
 };
 
 export default initTyped;
+
+
