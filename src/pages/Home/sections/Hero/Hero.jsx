@@ -30,6 +30,7 @@ const Hero = () => {
         </ul>
       </nav>
       <header className="container">
+        <span className="luz"></span>
         <h4 id="ola">Olá, me chamo</h4>
         <p className="text-gradient"> André Luiz <span id="sobrenome">de Almeida Dantas</span> </p>
         <h3 className="h3multiple">Sou um <span className="multiple-text"></span></h3>
