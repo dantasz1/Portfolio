@@ -1,14 +1,15 @@
-import Hero from "./sections/Hero/Hero"
+// src/pages/Home/Home.jsx
 
-const Home = ()  => {
-  
+import React from "react";
+import Hero from "./sections/Hero/Hero.jsx"; // Importe corretamente o componente Hero
 
-    return (
-      <>
-        <Hero/>
-     </>
-    )
-  }
-  
-  export default Home
-  
+const Home = () => {
+  return (
+    <div className="home">
+      <Hero />
+      {/* Outros componentes ou conteúdo da página */}
+    </div>
+  );
+};
+
+export default Home;
