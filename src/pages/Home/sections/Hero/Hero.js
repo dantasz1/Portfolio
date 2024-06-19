@@ -10,6 +10,8 @@ const initTyped = () => {
   });
 
   return typed;
+
+  
 };
 
 export default initTyped;
