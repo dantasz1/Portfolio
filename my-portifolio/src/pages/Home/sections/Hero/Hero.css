@@ -19,22 +19,8 @@ body {
   background-color: var(--cinza);
 }
 
-nav {
-  max-width: 1440px;
-  margin: auto;
-  padding: 3rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.nav-logo {
-  max-width: 150px;
-}
-
 a {
-  color: var(--branco);
+  color: var(--branco);   
   text-decoration: none;
   margin-right: 20px;
 }
@@ -45,12 +31,7 @@ a:hover {
   text-decoration: none;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-}
+
 
 .link a {
   position: relative;
@@ -73,21 +54,45 @@ a:hover {
   width: 70%;
 }
 
-#ola {
-  color: var(--branco);
-  font-family: "Poppins", sans-serif;
-}
-
-.multiple-text,
-.h3multiple {
-  color: var(--branco);
-}
-
 .text-gradient {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
   font-size: 5rem;
   color: #fff;
   font-weight: bold;
 }
+
+.header-top {
+  position: absolute;
+  top: 39%; /* Ajuste conforme necessário */
+  left: 25%;
+  transform: translateX(-50%);
+}
+#ola {
+ font-size: 2.0rem;
+  color: var(--branco);
+  font-family: "Poppins", sans-serif;
+}
+
+.h3multiple {
+  position: absolute;
+  top: 52%; /* Ajuste conforme necessário */
+  left: 30%;
+  transform: translateX(-50%);
+  color: var(--branco);
+  font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+  white-space: nowrap; /* Evita que o texto quebre para a próxima linha */
+}
+
+.multiple-text {
+  font-weight: bold;
+  background: linear-gradient(45deg, #1653f2, #1653f2, #373760);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
 
 #sobrenome {
   font-size: 5rem;
@@ -98,16 +103,27 @@ a:hover {
   color: transparent;
 }
 
-.container {
-  max-width: 1440px;
+
+.backGround-container {
+  max-width: 90%;
   margin: auto;
-  padding: 25vh 2rem;
+  padding: 25vh 2vw;
+  z-index: 1;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+  padding: 25vh 2vw;
 }
 
 .luz {
   position: relative;
-  box-shadow: 0 0 1000px 50px #1653f2;
+  box-shadow: 0 0 1000px 80px #1653f2;
   z-index: -100;
+  left: 30%;
+
+ 
 }
 
 #arrow {
@@ -141,73 +157,48 @@ a:hover {
 }
 
 #arrow img {
-  font-size: large;
+  font-size: 5rem;
 }
 
-/* Adiciona classe para esconder a luz quando carregado */
-.backGround1.loaded .luz {
-  opacity: 1;
-}
 
-/* Animação de saída */
-.backGround1.leave {
-  transform: translateX(-100%);
-  transition: transform 1s ease-in-out;
-}
 
-.about {
+.caixa-icons-contato {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 80px;
-  padding: 0 50px;
+  justify-content: flex-start; /* Alinha os ícones à esquerda */
+  padding-left: 0.3rem; /* Ajuste o valor conforme necessário para espaçar a partir da borda esquerda */
+  position: absolute; /* Adiciona a posição absoluta */
+  bottom: 2%; /* Ajusta a posição vertical conforme necessário */
+  left: 0; /* Posiciona à esquerda */
 }
 
-.about img {
-  border: 1px white solid;
-  border-radius: 50px;
-  width: 280px;
-}
-
-.about .info h2 {
-  align-items: center;
-  text-align: center;
-  color: var(--azul);
-  font-size: 42px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.about .info p {
+.icons-contato {
   display: flex;
-  align-items: center;
-  text-align: center;
-  color: var(--branco);
-
-  font-size: 21px;
-  font-weight: 500;
-  margin-bottom: 9px;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+  font-size: 1.7rem;
 }
 
-.contate-btn {
+#iIcons {
+  position: fixed; /* ou absolute, dependendo do layout */
+ 
   display: flex;
-  align-items: center;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: medium;
-  font-weight: 400;
-  background-color: var(--azul);
-  color: var(--branco);
-  padding: 15px 15px;
-  border-radius: 10px;
-  margin-top: 30px;
-  cursor: pointer;
-  margin: auto;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  padding-left: 0.5rem;
+  color: #fff;
+  font-size: 2rem;
 }
 
-.contate-btn:hover {
-  opacity: 0.8;
-}
+
+
+
+
+
+
 
 .textSkills {
   filter: drop-shadow(1px 1px 20px var(--azul));
@@ -288,6 +279,7 @@ a:hover {
   width: 300px;
   padding: 20px;
   text-align: center;
+  align-items: center;
 }
 
 .card img {
@@ -299,30 +291,25 @@ a:hover {
 }
 
 .card h3 {
+  align-items: center;
+  text-align:center;
   margin: 15px 0;
   font-size: 1.5em;
 }
 
 .card p {
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-size: 1rem;
   color: #666;
 }
 
-.card .card-content {
+.card .card-conteudo {
   flex-grow: 1;
 }
 
-.card button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  align-self: center;
-}
 
-.card button:hover {
-  background-color: #0056b3;
-}
+  
+
+ 

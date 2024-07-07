@@ -1,3 +1,6 @@
+
+
+
 import Typed from "typed.js";
 
 const initTyped = () => {
