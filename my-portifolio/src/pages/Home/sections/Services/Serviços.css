@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cinza);
+  }
+
+
+
+
+.Titulo-servico {
+  
+margin-top: 30vh;
+    filter: drop-shadow(1px 1px 20px var(--azul));
+    text-align: center;
+    font-size: 5rem;
+    color: var(--azul);
+ 
+  
+  }
+  .cards {
+    display: flex;
+    
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem auto;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .card img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 150px;
+    object-fit: center;
+    object-position: center;
+  }
+  
+  .card h3 {
+    align-items: center;
+    text-align:center;
+    margin: 15px 0;
+    font-size: 1.5em;
+  }
+  
+  .card p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .card .card-conteudo {
+    flex-grow: 1;
+  }
+  
+  

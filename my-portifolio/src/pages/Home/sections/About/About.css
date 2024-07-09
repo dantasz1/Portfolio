@@ -14,44 +14,81 @@
     background-color: var(--cinza);
   }
 
-img {
+  img {
+    display: flex;
     width: 100%;
-    display: flex;}
-
+    
+  }
 
 
 .about {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 80px;
-    padding: 0 50px;
+    gap: 40px;
+    padding: 0px 50px;
   }
   
   .about img {
+   
     border: 1px white solid;
-    border-radius: 50px;
-    width: 280px;
+    border-radius: 15px;
+ 
+    width: 20vw;
+  
   }
   
-  .about .info h2 {
+  
+  .aboutMe {
+    position: relative;
+    display: inline-block; /* Garante que o pseudo-elemento se ajuste ao texto */
+   
+   
+    content: '';
     align-items: center;
     text-align: center;
     color: var(--azul);
-    font-size: 42px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 500;
+     ;
+     
+    
   }
+
+  .aboutMe::after {
+    content: '';
+    position: absolute;
+    bottom: 10px; /* Ajuste a posição vertical conforme necessário */
+    left: 0;
+    width: 35%; /* Define o comprimento do traço como 20% da largura do texto */
+    height: 3px; /* Altura do traço */
+    background-color: var(--azul); /* Cor do traço */
+   
+
+  }
+
+.info {
+ 
+ flex-direction: column;
+  
+
+}
   
   .about .info p {
     display: flex;
+    
     align-items: center;
     text-align: center;
     color: var(--branco);
+  width: 50vw;
+  height: 20vh;
   
-    font-size: 21px;
-    font-weight: 500;
-    margin-bottom: 9px;
+    
+    
+  
+    
+ 
+    
   }
   
   .contate-btn {
@@ -59,18 +96,22 @@ img {
     align-items: center;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-size: medium;
-    font-weight: 400;
+    font-size: small;
+    font-weight: 200;
     background-color: var(--azul);
     color: var(--branco);
-    padding: 15px 15px;
+    padding: 12px 12px;
     border-radius: 10px;
-    margin-top: 30px;
+   
     cursor: pointer;
-    margin: auto;
+   justify-content: flex-start;
+  
+
+ 
   }
   
   .contate-btn:hover {
     opacity: 0.8;
+   
   }
   

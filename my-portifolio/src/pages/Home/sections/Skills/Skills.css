@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cinza);
+  }
+
+
+  .habilidades {
+    justify-content: center;
+    width: 50%;
+    display: flex;
+  
+    align-items: center;
+  margin : 5rem auto;
+   
+  
+    border: 2px solid white;
+    border-radius: 20px;
+  
+    padding: 60px;
+    background-color: #ffffff14;
+  }
+
+
+  .textSkills {
+    filter: drop-shadow(1px 1px 20px var(--azul));
+
+    text-align: center;
+    font-size: 4rem;
+    color: var(--azul);
+  }
+  
+  .skills .infoSkill h3 {
+    color: var(--branco);
+    font-size: 30px;
+    margin-bottom: 30px;
+    display: flex;
+  }
+  
+  .skills .item i {
+    font-size: 34px;
+    color: #fff;
+  }
+
+
+
+  .icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .item {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #313133;
+    transition: transform 0.1s;
+    width: 60px;
+  }
+  .item:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+  }

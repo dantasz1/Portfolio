@@ -44,3 +44,39 @@ img {
       max-width: 120px;
     }
   }
+
+  a {
+    color: var(--branco);   
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  a:hover {
+    color: var(--azul);
+    list-style-type: none;
+    text-decoration: none;
+  }
+  
+  
+  
+  .link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+  }
+  
+  .link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--azul);
+    transition: all 0.3s ease;
+  }
+  
+  .link a:hover::after {
+    width: 70%;
+  }
+  

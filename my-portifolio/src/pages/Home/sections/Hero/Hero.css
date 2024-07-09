@@ -19,43 +19,10 @@ body {
   background-color: var(--cinza);
 }
 
-a {
-  color: var(--branco);   
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-a:hover {
-  color: var(--azul);
-  list-style-type: none;
-  text-decoration: none;
-}
-
-
-
-.link a {
-  position: relative;
-  padding-bottom: 0.75rem;
-  color: #fff;
-}
-
-.link a::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--azul);
-  transition: all 0.3s ease;
-}
-
-.link a:hover::after {
-  width: 70%;
-}
 
 .text-gradient {
-  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center;
+  /* Centraliza o conteúdo horizontalmente */
   font-size: 5rem;
   color: #fff;
   font-weight: bold;
@@ -63,35 +30,49 @@ a:hover {
 
 .header-top {
   position: absolute;
-  top: 39%; /* Ajuste conforme necessário */
+  top: 39%;
+  /* Ajuste conforme necessário */
   left: 25%;
   transform: translateX(-50%);
 }
+
 #ola {
- font-size: 2.0rem;
+  font-size: 1.9rem;
   color: var(--branco);
   font-family: "Poppins", sans-serif;
 }
 
 .h3multiple {
+
   position: absolute;
-  top: 52%; /* Ajuste conforme necessário */
+  top: 52%;
+  /* Ajuste conforme necessário */
   left: 30%;
   transform: translateX(-50%);
   color: var(--branco);
-  font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
-  white-space: nowrap; /* Evita que o texto quebre para a próxima linha */
+  font-size: 1.5rem;
+  /* Ajuste o tamanho conforme necessário */
+  white-space: nowrap;
+  /* Evita que o texto quebre para a próxima linha */
 }
 
 .multiple-text {
   font-weight: bold;
   background: linear-gradient(45deg, #1653f2, #1653f2, #373760);
+  color: #fff;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+
 }
 
+.luz {
+  position: relative;
+  box-shadow: 0 0 1000px 80px #1653f2;
+  z-index: -100;
+  left: 30%;
 
+
+}
 
 
 #sobrenome {
@@ -117,14 +98,7 @@ a:hover {
   padding: 25vh 2vw;
 }
 
-.luz {
-  position: relative;
-  box-shadow: 0 0 1000px 80px #1653f2;
-  z-index: -100;
-  left: 30%;
 
- 
-}
 
 #arrow {
   color: var(--branco);
@@ -145,6 +119,7 @@ a:hover {
 }
 
 @keyframes moveUpDown {
+
   0%,
   100% {
     transform: translate(-50%, 0%);
@@ -164,11 +139,16 @@ a:hover {
 
 .caixa-icons-contato {
   display: flex;
-  justify-content: flex-start; /* Alinha os ícones à esquerda */
-  padding-left: 0.3rem; /* Ajuste o valor conforme necessário para espaçar a partir da borda esquerda */
-  position: absolute; /* Adiciona a posição absoluta */
-  bottom: 2%; /* Ajusta a posição vertical conforme necessário */
-  left: 0; /* Posiciona à esquerda */
+  justify-content: flex-start;
+  /* Alinha os ícones à esquerda */
+  padding-left: 0.3rem;
+  /* Ajuste o valor conforme necessário para espaçar a partir da borda esquerda */
+  position: absolute;
+  /* Adiciona a posição absoluta */
+  bottom: 35.5%;
+  /* Ajusta a posição vertical conforme necessário */
+  left: 0;
+  /* Posiciona à esquerda */
 }
 
 .icons-contato {
@@ -180,136 +160,16 @@ a:hover {
 }
 
 #iIcons {
-  position: fixed; /* ou absolute, dependendo do layout */
- 
+  position: fixed;
+  /* ou absolute, dependendo do layout */
+
   display: flex;
   flex-direction: column;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  
+
   padding-left: 0.5rem;
   color: #fff;
   font-size: 2rem;
 }
-
-
-
-
-
-
-
-
-.textSkills {
-  filter: drop-shadow(1px 1px 20px var(--azul));
-  text-align: center;
-  font-size: 4rem;
-  color: var(--azul);
-}
-
-.skills .info h3 {
-  color: var(--branco);
-  font-size: 30px;
-  margin-bottom: 30px;
-  display: flex;
-}
-
-.skills .item i {
-  font-size: 34px;
-  color: #fff;
-}
-
-/* Editação Bruno */
-.habilidades {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 200px;
-
-  border: 2px solid white;
-  border-radius: 20px;
-
-  padding: 60px;
-  background-color: #ffffff14;
-}
-.icons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
-.item {
-  padding: 3px;
-  border-radius: 5px;
-  background-color: #313133;
-  transition: transform 0.1s;
-  width: 60px;
-}
-.item:hover {
-  cursor: pointer;
-  transform: scale(1.5);
-}
-/* Editação Bruno */
-
-
-.Titulo-servico {
-  
-  filter: drop-shadow(1px 1px 20px var(--azul));
-  text-align: center;
-  font-size: 5rem;
-  color: var(--azul);
-
-
-}
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  margin: 2rem auto;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  padding: 20px;
-  text-align: center;
-  align-items: center;
-}
-
-.card img {
-  border-radius: 8px 8px 0 0;
-  width: 100%;
-  height: 150px;
-  object-fit: center;
-  object-position: center;
-}
-
-.card h3 {
-  align-items: center;
-  text-align:center;
-  margin: 15px 0;
-  font-size: 1.5em;
-}
-
-.card p {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 1rem;
-  color: #666;
-}
-
-.card .card-conteudo {
-  flex-grow: 1;
-}
-
-
-  
-
- 

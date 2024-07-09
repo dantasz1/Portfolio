@@ -1,13 +1,11 @@
 import "./Hero.css";
-import "../Nav/Nav.css"
+import "../NavBar/Nav.css"
 import { useEffect } from "react";
 
 
 import initTyped from "./Hero.js"; // Importar a função initTyped
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import undrawWeb from "../../../../assets/images/undrawWeb.svg"
-import undrawSite from "../../../../assets/images/undrawSite.svg"
-import undrawDesign from "../../../../assets/images/undrawDesign.svg"
+
 
 
 
@@ -57,7 +55,7 @@ const Hero = () => {
 };
 
 
-  
+export default Hero;
 
 //useEffect(() => {
 //  
@@ -92,82 +90,8 @@ const Hero = () => {
   
 
   
-    <>
-     
     
+  
 
 
 
-        <div className="habilidades">
-          <div className="skills">
-            <h5 className="textSkills">Minhas Skills</h5>
-            <br />
-            <div className="info">
-              <h3>Quais Linguagens eu domino?</h3>
-            </div>
-            <div className="icons">
-              <div className="item">
-                <i className="ri-html5-fill"></i>
-              </div>
-              <div className="item">
-                <i className="ri-css3-fill"></i>
-              </div>
-              <div className="item">
-                <i className="ri-javascript-fill"></i>
-              </div>
-              <div className="item">
-                <i className="ri-database-2-fill"></i>
-              </div>
-              <div className="item">
-                <i className="ri-github-fill"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-     
-
-
-
-      <div className="Titulo-servico">
-      <h5>Serviços</h5>
-      </div>
-      
-      <section className="servicos">
-  <div className="cards">
-    <div className="card">
-      <img src={undrawWeb} alt="Imagem 1"/>
-      <div className="card-conteudo">
-        <h3>Desenvolvimento de websites.</h3>
-        <p>- Criação de websites modernos e responsivos seguindo o padrão de escolha do cliente</p>
-      </div>
-     
-    </div>
-    <div className="card">
-      <img src={undrawDesign} alt="Imagem 2"/>
-      <div className="card-conteudo">
-        <h3>UI/UX.</h3>
-        <p>- Prototipagem Interativa</p>
-        <p>- Arquitetura de Software</p>
-        <p>- Design Interface</p>
-        <p>- Documentação de Software</p>
-      </div>
-      
-    </div>
-    <div className="card">
-      <img src={undrawSite} alt="Imagem 3"/>
-      <div className="card-conteudo">
-        <h3>Manutenção de sites.</h3>
-        <p>- Serviços de manutenção para garantir que seu site esteja sempre atualizado, seguro e funcionando corretamente, incluindo correções de bugs e otimização de desempenho.</p>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-
-
-    </>
-  ;
-
-
-export default Hero;

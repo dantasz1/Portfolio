@@ -6,10 +6,15 @@ import  "../About/About.css"
 const About = () => {
     return (
 <section className="about-me container">
+
         <div className="about">
+
           <img src={Foto} alt="minhaFoto" />
+
           <div className="info">
+
             <h2 className="aboutMe">About Me</h2>
+            
             <p>
               Olá, meu nome é André! Estou cursando Análise e Desenvolvimento de
               Sistemas na universidade da UNIP Paulista, em Santos. Meu contato
@@ -19,7 +24,8 @@ const About = () => {
               front-end e tenho experiência com HTML, CSS, JavaScript, React,
               MongoDB e PostgreSQL . . .
             </p>
-            <button className="contate-btn">Fale comigo</button>
+            <button className="contate-btn">Mais Informações</button>
+            
           </div>
         </div>
         </section>
