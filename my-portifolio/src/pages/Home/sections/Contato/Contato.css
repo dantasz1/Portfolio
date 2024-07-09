@@ -12,7 +12,35 @@
   body {
     font-family: "Poppins", sans-serif;
     background-color: var(--cinza);
-  }
-
 
   
+ 
+  }
+.contato {
+    width: 100%;
+    height: 100dvh;
+    min-width: 100vw;
+    padding: 5rem 2rem;
+}
+  .textosContato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--branco);
+  }
+  .textoDev {
+    background: linear-gradient(45deg, #1653f2, #1653f2, #373760);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  }
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 3rem;
+}

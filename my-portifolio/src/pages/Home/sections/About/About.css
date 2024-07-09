@@ -1,117 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
-  }
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: "Poppins", sans-serif;
-    background-color: var(--cinza);
-  }
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--cinza);
+}
 
-  img {
-    display: flex;
-    width: 100%;
-    
-  }
+/* Importação de fontes e estilos adicionais omitidos para brevidade */
 
+section {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
 
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 0px 50px;
-  }
-  
-  .about img {
-   
-    border: 1px white solid;
-    border-radius: 15px;
- 
-    width: 20vw;
-  
-  }
-  
-  
-  .aboutMe {
-    position: relative;
-    display: inline-block; /* Garante que o pseudo-elemento se ajuste ao texto */
-   
-   
-    content: '';
-    align-items: center;
-    text-align: center;
-    color: var(--azul);
-    font-size: 40px;
-    font-weight: 500;
-     ;
-     
-    
-  }
-
-  .aboutMe::after {
-    content: '';
-    position: absolute;
-    bottom: 10px; /* Ajuste a posição vertical conforme necessário */
-    left: 0;
-    width: 35%; /* Define o comprimento do traço como 20% da largura do texto */
-    height: 3px; /* Altura do traço */
-    background-color: var(--azul); /* Cor do traço */
-   
-
-  }
+#Andre {
+  width: 100%;
+  padding: 20vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens verticalmente */
+}
 
 .info {
- 
- flex-direction: column;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 2rem; /* Espaço abaixo da seção de informações */
+}
 
+.info h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  background-image: linear-gradient(45deg, #1653f2, #1653f2, #1c1c92);
+  background-clip: text;
+  -webkit-background-clip: text; /* Adiciona suporte para WebKit */
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.info span {
+  color: #adadad;
+}
+
+.textoEFoto {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  
+ justify-content: center;
+}
+
+.texto {
+  width: 40vw; /* Largura do texto em viewport width */
+  padding: 20px;
+  color: #949494;
+  border-radius: 8px;
+  margin-right: 2rem; /* Espaçamento entre texto e imagem */
+  
+}
+
+.texto strong {
+  color: #fff;
+}
+
+.texto p {
+  font-size: 17px; /* Tamanho da fonte do texto */
+  line-height: 1.8; /* Altura da linha do texto */
+}
+
+.minhaFoto {
+  width: 300px; /* Largura fixa da foto */
+  height: 300px; /* Altura fixa da foto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minhaFoto img {
+  width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+  max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+  border: 10px double #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media  (max-width:768px) {
+  .minhaFoto {
+    display: none;
+  }
 }
   
-  .about .info p {
-    display: flex;
-    
-    align-items: center;
-    text-align: center;
-    color: var(--branco);
-  width: 50vw;
-  height: 20vh;
-  
-    
-    
-  
-    
- 
-    
-  }
-  
-  .contate-btn {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: small;
-    font-weight: 200;
-    background-color: var(--azul);
-    color: var(--branco);
-    padding: 12px 12px;
-    border-radius: 10px;
-   
-    cursor: pointer;
-   justify-content: flex-start;
-  
-
- 
-  }
-  
-  .contate-btn:hover {
-    opacity: 0.8;
-   
-  }
   

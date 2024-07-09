@@ -7,7 +7,9 @@
   outline: none;
   border: none;
   box-sizing: border-box;
+  
 }
+
 
 img {
   width: 100%;
@@ -17,6 +19,10 @@ img {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--cinza);
+ 
+  min-height: 100vh;
+  width: 100%
+  
 }
 
 
@@ -58,7 +64,8 @@ body {
 
 .multiple-text {
   font-weight: bold;
-  background: linear-gradient(45deg, #1653f2, #1653f2, #373760);
+  background: linear-gradient(45deg, #1653f2, #1653f2, #1c1c92);
+  
   color: #fff;
   -webkit-background-clip: text;
   background-clip: text;
@@ -93,7 +100,7 @@ body {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
   padding: 25vh 2vw;
 }
