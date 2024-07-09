@@ -1,5 +1,5 @@
 import Foto from "../../../../assets/images/fotozona.png";
-import  "../About/About.css"
+import  "../About/About.css";
 
 
 
@@ -9,7 +9,10 @@ const About = () => {
   <div className="info">
     <h2>Sobre mim</h2>
     <span>Conheça mais sobre mim</span>
+    <div className="linha-separadora">
     <hr />
+    </div>
+    
   </div>
 
   <div className="textoEFoto">
@@ -28,6 +31,7 @@ const About = () => {
       <img src={Foto} alt="Foto de André" />
     </div>
   </div>
+  <div className="spacer layer1"></div>
 </section>
 
     )

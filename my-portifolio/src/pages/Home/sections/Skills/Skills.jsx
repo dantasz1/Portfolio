@@ -4,10 +4,10 @@ const Skills = () => {
     return (
         <div className="habilidades">
         <div className="skills">
-          <h5 className="textSkills">Minhas Skills</h5>
+          <h2 className="textSkills">Minhas Skills</h2>
           <br />
           <div className="infoSkill">
-            <h3>Quais Linguagens eu domino?</h3>
+            <h4>Quais Linguagens eu domino?</h4>
           </div>
           <div className="icons">
             <div className="item">

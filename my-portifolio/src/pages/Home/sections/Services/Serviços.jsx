@@ -8,9 +8,9 @@ const Servicos  = () => {
     return (
         <>
     
-<div className="Titulo-servico">
-<h5>Serviços</h5>
-</div>
+
+<h2 className="Titulo-servico">Serviços</h2>
+
 
 <section className="servicos">
 <div className="cards">
