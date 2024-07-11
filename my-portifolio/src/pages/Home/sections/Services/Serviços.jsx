@@ -9,7 +9,7 @@ const Servicos  = () => {
         <>
     
 
-<h2 className="Titulo-servico">Serviços</h2>
+<h2 className="Titulo-servico"> &lt; Serviços &gt;</h2>
 
 
 <section className="servicos">

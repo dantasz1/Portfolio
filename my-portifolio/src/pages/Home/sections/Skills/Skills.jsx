@@ -2,13 +2,17 @@ import  "../Skills/Skills.css"
 
 const Skills = () => {
     return (
+      <>
+      
+      <h2 className="textSkills"> &lt; Skills &gt;</h2>
         <div className="habilidades">
+          
         <div className="skills">
-          <h2 className="textSkills">Minhas Skills</h2>
+         
           <br />
-          <div className="infoSkill">
-            <h4>Quais Linguagens eu domino?</h4>
-          </div>
+          
+      <h4 className="infoSkill">Quais Linguagens eu domino?</h4>
+          
           <div className="icons">
             <div className="item">
               <i className="ri-html5-fill"></i>
@@ -28,8 +32,11 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    )
-   
+    </>
 
-}
+    )
+    
+   
+  }
+
 export default Skills

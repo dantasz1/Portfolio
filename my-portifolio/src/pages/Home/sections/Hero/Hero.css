@@ -159,11 +159,26 @@ body {
 }
 
 .icons-contato {
+  list-style: none;
   display: flex;
+  justify-content: flex-start;
+  /* Alinha os ícones à esquerda */
+  padding-left: 1rem;
+  /* Ajuste o valor conforme necessário para espaçar a partir da borda esquerda */
+  position: absolute;
+  /* Adiciona a posição absoluta */
+  bottom: 5%;
+  /* Ajusta a posição vertical conforme necessário */
+  
+  /* Posiciona à esquerda */
+ 
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+ 
+  
 }
 
 #iIcons {
@@ -179,4 +194,42 @@ body {
   padding-left: 0.5rem;
   color: #fff;
   font-size: 2rem;
+  transition: color 0.35s ease ;
 }
+
+#iIcons:hover {
+
+
+  color: var(--azul);
+  
+  }
+
+
+
+  .ri-mail-line::after,
+  .ri-github-fill::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 25px;
+    margin: 0 auto;
+    background-color: var(--azul);
+  }
+  
+
+  
+
+
+
+
+  .ri-linkedin-box-fill::after {
+   
+    content: "";
+    display: block;
+    
+    
+    width: 2px;
+    height: 50px;
+    margin: 0px auto;
+    background-color: var(--azul);
+  }

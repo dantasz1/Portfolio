@@ -7,7 +7,7 @@ const About = () => {
     return (
 <section id="Andre">
   <div className="info">
-    <h2>Sobre mim</h2>
+    <h2> &lt; Sobre mim &gt;</h2>
     <span>Conheça mais sobre mim</span>
     <div className="linha-separadora">
     <hr />

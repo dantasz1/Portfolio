@@ -41,15 +41,26 @@ const Hero = () => {
           <KeyboardArrowDownIcon />
         </span>
       </header>
-      <div className="caixa-icons-contato">
+     
+      <ul className="icons-contato">
+ 
+  <li>
+    <a href="mailto:andreluiz.desenvolvedor@gmail.com" target="_blank" rel="noreferrer">
+      <i id="iIcons" className="ri-mail-line"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/dantasz1" target="_blank" rel="noopener noreferrer">
+      <i id="iIcons" className="ri-github-fill"></i>
+    </a>
+  </li>
+  <li>
+    <a href="www.linkedin.com/in/andréluiz-desenvolvedor" target="_blank" rel="noopener noreferrer">
+      <i id="iIcons" className="ri-linkedin-box-fill"></i>
+    </a>
+  </li>
+</ul>
 
-        <ul className="icons-contato">
-          <li><i  id="iIcons" className="ri-whatsapp-line"></i></li>
-          <li><i id="iIcons" className="ri-mail-line"></i></li>
-          <li><i id="iIcons" className="ri-github-fill"></i></li>
-          <li><i id="iIcons" className="ri-linkedin-box-fill"></i></li>
-        </ul>
-      </div>
     </>
   );
 };
