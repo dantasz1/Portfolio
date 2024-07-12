@@ -78,11 +78,10 @@ color: #adadad;
 
   .skillsBar {
     flex-direction: column;
-   
-    
-    background-color: #dbd5d596;
-  }
 
+    background-color: #dbd5d596;
+  
+  }
   
   
  
@@ -100,8 +99,16 @@ color: #adadad;
     background-color: #29292996;
     padding: 1rem; /* Adicionado padding para o conteúdo interno */
     border-radius: 10px; /* Adicionado border-radius para melhor aparência */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
   }
-
+  .bar:hover {
+   
+    transform: scale(1.05); /* Aumenta em 5% o tamanho do card */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar */
+  z-index: 1; /* Move o card para frente */
+  }
+ 
   .infoBar > span {
 font-size: 1rem;
 font-weight: 500;

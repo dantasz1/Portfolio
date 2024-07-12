@@ -50,8 +50,14 @@
     text-align: center;
     align-items: center;
     cursor: pointer;
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  
+  .card:hover {
+    transform: scale(1.05); /* Aumenta em 5% o tamanho do card */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar */
+    z-index: 1; /* Move o card para frente */
+  }
   .card img {
     border-radius: 8px 8px 0 0;
     width: 100%;
