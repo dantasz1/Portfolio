@@ -19,58 +19,67 @@ img {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--cinza);
- 
   min-height: 100vh;
-  width: 100%
-  
+  width: 100%;
 }
 
-
-.text-gradient {
-  text-align: center;
-  /* Centraliza o conteúdo horizontalmente */
-  font-size: 5rem;
-  color: #fff;
-  font-weight: bold;
+.backGround-container {
+  height: 100vh; /* Altura igual à altura da tela */
+  width: 100%;
+  padding: 25vh 0vw; /* Espaçamento interno */
 }
 
-.header-top {
-  position: absolute;
-  top: 39%;
-  /* Ajuste conforme necessário */
-  left: 25%;
-  transform: translateX(-50%);
+.containerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.nome-completo {
+  white-space: nowrap;
 }
 
 #ola {
-  font-size: 1.9rem;
+  font-size: 1vw;
   color: var(--branco);
-  font-family: "Poppins", sans-serif;
+}
+
+#text-gradient {
+  text-align: center;
+  font-size: 4vw;
+  color: #fff;
+  font-weight: bold;
 }
 
 .h3multiple {
-
-  position: absolute;
-  top: 52%;
-  /* Ajuste conforme necessário */
-  left: 30%;
-  transform: translateX(-50%);
+  font-size: 0.9vw;
   color: var(--branco);
-  font-size: 1.5rem;
-  /* Ajuste o tamanho conforme necessário */
-  white-space: nowrap;
-  /* Evita que o texto quebre para a próxima linha */
-}
 
+}
+.titulo {
+ text-align: left;
+}
 .multiple-text {
   font-weight: bold;
   background: linear-gradient(45deg, #1653f2, #1653f2, #1c1c92);
-  
+  font-size: 1.2vw;
   color: #fff;
   -webkit-background-clip: text;
   background-clip: text;
-
 }
+
+#sobrenome {
+  font-size: 4vw;
+  font-weight: bold;
+  background: linear-gradient(45deg, #1653f2, #1653f2, #373760);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
 
 .luz {
   position: relative;
@@ -82,28 +91,12 @@ body {
 }
 
 
-#sobrenome {
-  font-size: 5rem;
-  font-weight: bold;
-  background: linear-gradient(45deg, #1653f2, #1653f2, #373760);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
 
 
-.backGround-container {
-  max-width: 90%;
-  margin: auto;
-  padding: 25vh 2vw;
-  z-index: 1;
-}
 
-.container {
-  max-width: 100%;
-  margin: auto;
-  padding: 25vh 2vw;
-}
+
+
+
 
 
 
@@ -139,7 +132,7 @@ body {
 }
 
 #arrow img {
-  font-size: 5rem;
+  font-size: 5vh;
 }
 
 
@@ -181,6 +174,7 @@ body {
   
 }
 
+
 #iIcons {
   position: fixed;
   /* ou absolute, dependendo do layout */
@@ -199,28 +193,12 @@ body {
 
 #iIcons:hover {
 
+ 
 
   color: var(--azul);
   
   }
-
-
-
-  .ri-mail-line::after,
-  .ri-github-fill::after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 25px;
-    margin: 0 auto;
-    background-color: var(--azul);
-  }
   
-
-  
-
-
-
 
   .ri-linkedin-box-fill::after {
    

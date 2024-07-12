@@ -9,7 +9,7 @@ const About = () => {
   <div className="info">
     <h2> &lt; Sobre mim &gt;</h2>
     <span>Conheça mais sobre mim</span>
-    <div className="linha-separadora">
+    <div className="linha-separadora1">
     <hr />
     </div>
     
@@ -28,7 +28,7 @@ const About = () => {
       </p>
     </div>
     <div className="minhaFoto">
-      <img src={Foto} alt="Foto de André" />
+      <img id="fotoAndre" src={Foto} alt="Foto de André" />
     </div>
   </div>
   <div className="spacer layer1"></div>

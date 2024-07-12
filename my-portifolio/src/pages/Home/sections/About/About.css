@@ -57,7 +57,7 @@ body {
 .info span {
   color: #adadad;
 }
-.linha-separadora {
+.linha-separadora1 {
   width: 70%;
   
   
@@ -92,6 +92,7 @@ body {
 }
 
 .minhaFoto {
+  
   width: 300px; /* Largura fixa da foto */
   height: 300px; /* Altura fixa da foto */
   display: flex;
@@ -100,12 +101,26 @@ body {
 }
 
 .minhaFoto img {
+  
   width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
   max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
   border: 10px double #fff;
   border-radius: 50%;
   overflow: hidden;
+ 
+
 }
+
+
+#fotoAndre {
+  opacity: 2;
+  transition: opacity 0.5s ease; 
+
+}
+#fotoAndre:hover {
+  opacity: 0.5 ;
+}
+
 @media  (max-width:768px) {
   .minhaFoto {
     display: none;

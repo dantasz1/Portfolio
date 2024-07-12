@@ -49,6 +49,7 @@
     padding: 20px;
     text-align: center;
     align-items: center;
+    cursor: pointer;
   }
   
   .card img {

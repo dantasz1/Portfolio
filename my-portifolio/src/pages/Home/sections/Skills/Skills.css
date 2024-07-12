@@ -12,66 +12,132 @@
   body {
     font-family: "Poppins", sans-serif;
     background-color: var(--cinza);
+    min-height: 100vh;
+ width: 100%
   }
 
+#skills {
+  
+  width: 100%;
+  color: var(--branco);
+ 
+}
 
-  .habilidades {
-    justify-content: center;
-  
-    display: flex;
-  text-align: center;
-    align-items: center;
-  
+ .titulos {
+  display: flex;
   flex-direction: column;
-    border: 2px solid white;
-    border-radius: 20px;
-  
-   padding: 2rem;
-    background-color: #ffffff14;
-  }
-  .skills {
-   margin: auto auto;
-  }
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+ }
 
-  .textSkills {
+  .titulos h2 {
     filter: drop-shadow(1px 1px 20px var(--azul));
 
     text-align: center;
     font-size: 3rem;
     color: var(--azul);
   }
-  
-  .infoSkill  {
+  .titulos span {
     display: flex;
-    color: var(--branco);
-    justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-  ;
-  }
-  
-  .skills .item i {
-    font-size: 34px;
-    color: #fff;
+    justify-content: center;
+color: #adadad;
   }
 
-
-
-  .icons {
+  .linha-separadora2 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    border: 1px solid #1653f2;
+    margin: 1px auto; /* Ajuste o espaçamento conforme necessário */
+  }
+
+  /* -================= */
+  .containerSkills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+  
     gap: 2rem;
     justify-content: center;
-    flex-wrap: nowrap;
+/*   
+    transform: translateY(50px); Translação para baixo para animação de entrada */
+    /* transition: opacity 0.8s ease, transform 0.8s ease; */
   }
-  .item {
-    padding: 3px;
-    border-radius: 5px;
-    background-color: #313133;
-    transition: transform 0.1s;
-    width: 60px;
+  
+  /* .containerSkills.aos-init {
+  
+  
+    /* transform: translateY(0); */
+
+
+
+
+  .skillsBar {
+    flex-direction: column;
+   
+    
+    background-color: #dbd5d596;
   }
-  .item:hover {
-    cursor: pointer;
-    transform: scale(1.5);
+
+  
+  
+ 
+  .skillBar h4 {
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+  padding: 1rem 2rem;
+    background-color: rgb(70, 68, 68);
   }
+  .bar {
+    flex-direction: column;
+    width: 20vw;
+    height: 70vh;
+    background-color: #29292996;
+    padding: 1rem; /* Adicionado padding para o conteúdo interno */
+    border-radius: 10px; /* Adicionado border-radius para melhor aparência */
+  }
+
+  .infoBar > span {
+font-size: 1rem;
+font-weight: 500;
+display: flex;
+padding: 1rem 2rem;
+align-items: center;
+  }
+  .progress-line html {
+    position: relative;
+    height: 0.5rem;
+    width: 100%;
+   background-color: #f0f0f0;
+   border-radius: 10px;
+  }
+  .progress-line html::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    bottom: 0;
+    border: 0.5rem solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+  }
+  .bar .progress-line span:after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    background: #000;
+    border-radius: 3px;
+    opacity: 0;
+  }
+  

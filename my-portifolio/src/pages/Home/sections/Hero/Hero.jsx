@@ -21,26 +21,33 @@ const Hero = () => {
 
   return (
     <>
-      <header 
-      className="backGround-container">
+    <section id="home " className="backGround-container" >
+     
 
-
+    
         <span className="luz"></span>
 
-        <div className="header-top">
-        <h4 id="ola">Olá, me chamo</h4>
-        </div>
-        <p className="text-gradient">
-          André Luiz <span id="sobrenome"> de Almeida Dantas</span>
-        </p>
+<div className="containerTitle"> 
+    <aside className="titulo">
 
-        <h3 className="h3multiple">
-          Sou um <span className="multiple-text"></span>
-        </h3>
+    <span id="ola">Olá, me chamo</span>
+        
+        <div className="nome-completo">
+        <span id="text-gradient">André Luiz</span> <span id="sobrenome"> de Almeida Dantas</span>
+        </div>
+      
+               <span  className="h3multiple">
+                 Sou um <span className="multiple-text"></span>
+               </span>
+    </aside>
+ 
+</div>
+        
         <span id="arrow">
           <KeyboardArrowDownIcon />
         </span>
-      </header>
+     
+      </section>
      
       <ul className="icons-contato">
  
@@ -51,7 +58,7 @@ const Hero = () => {
   </li>
   <li>
     <a href="https://github.com/dantasz1" target="_blank" rel="noopener noreferrer">
-      <i id="iIcons" className="ri-github-fill"></i>
+      <i id="iIcons"  className="ri-github-fill"></i>
     </a>
   </li>
   <li>

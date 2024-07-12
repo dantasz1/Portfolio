@@ -9,10 +9,12 @@ const Servicos  = () => {
         <>
     
 
-<h2 className="Titulo-servico"> &lt; Serviços &gt;</h2>
+<h2     data-aos="zoom-in"     className="Titulo-servico"> &lt; Serviços &gt;</h2>
 
 
-<section className="servicos">
+<section className="servicos" data-aos="flip-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="10000">
 <div className="cards">
 <div className="card">
 <img src={undrawWeb} alt="Imagem 1"/>
