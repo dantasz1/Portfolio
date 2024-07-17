@@ -1,12 +1,7 @@
 import { useState, useEffect } from "react";
 import "../Skills/Skills.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-
-
-
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Skills = () => {
   const [visivel, setVisivel] = useState(false);
@@ -14,7 +9,7 @@ const Skills = () => {
   useEffect(() => {
     if (visivel) {
       AOS.init({
-        easing: 'ease-in-out', // Tipo de easing
+        easing: "ease-in-out", // Tipo de easing
         once: true, // Anima apenas uma vez ao entrar na tela
       });
       AOS.refresh();
@@ -29,71 +24,140 @@ const Skills = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, );
- 
-
-
-
+  });
 
   return (
     <>
-      <section id="skills" data-aos="zoom-in" data-aos-duration=" 10000" >
+      <section id="skills" data-aos="zoom-in" data-aos-duration="10000">
         <div className="titulos">
-          <h2 className="textSkills"> &lt; Skills &gt;</h2>
+          <h2 className="textSkills">&lt; Skills &gt;</h2>
           <span>Skills técnicas e pessoais</span>
           <div className="linha-separadora2">
             <hr />
           </div>
         </div>
-        <div className = "containerSkills" >
-          
-          <div className="skillBar">
-           
 
-            <div className="bar">
+        <div className="containerSkills">
+
+          {/* HardSkills */}
+          <div className="skillBar hardskills">
             <h4>HardSkills</h4>
-              <div className="infoBar">
-                <span className="icon html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-                                    <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
-                                    <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
-                                    <path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path>
-                                    <path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
-                                </svg>HTML</span>
-                
+
+            <div className="bar">
+              <span className="ifo">
+                <i style={{ color: '#c95d2e' }} className="bx bxl-html5"></i>
+                <span className="spans">HTML</span>
+              </span>
+              <div className="progress-line html">
+                <span></span>
               </div>
-              <div className="progress-line html" data-progress = "90" ><span></span></div>
+            </div>
+
+            <div className="bar">
+              <span className="ifo">
+                <i style={{ color: '#147bbc' }} className="bx bxl-css3"></i>
+                <span className="spans">CSS3</span>
+              </span>
+              <div className="progress-line css">
+                <span></span>
+              </div>
+            </div>
+
+            <div className="bar">
+              <span className="ifo">
+                <i style={{ color: '#b0bc1e' }} className="bx bxl-javascript"></i>
+                <span className="spans">JAVASCRIPT</span>
+              </span>
+              <div className="progress-line js">
+                <span></span>
+              </div>
+            </div>
+
+            <div className="bar">
+              <span className="ifo">
+                <i style={{ color: '#69bcbc' }} className="bx bxl-react"></i>
+                <span className="spans">REACT</span>
+              </span>
+              <div className="progress-line react">
+                <span></span>
+              </div>
             </div>
           </div>
 
+         {/* SoftSkills */}
+<div className="skillBar softskills">
+  <h4>SoftSkills</h4>
 
-          <div className="skillBar">
-           
+  <div className="bar-softskills">
+    <div className="ifo">
+      <span>Comunicação</span>
+    </div>
+    <div className="progress-line comunicacao">
+      <span></span>
+    </div>
+  </div>
+  
+  <div className="bar-softskills">
+    <div className="ifo">
+      <span>Colaboração</span>
+    </div>
+    <div className="progress-line colaboracao">
+      <span></span>
+    </div>
+  </div>
 
-            <div className="bar">
-            <h4>SoftSKills</h4>
-              <div className="infoBar">
-                <span className="icon html"></span>
-                
-              </div>
-              <div className="progress-line html" data-progress = "90" ><span></span></div>
-            </div>
-          </div>
-          <div className="skillBar">
-           
+  <div className="bar-softskills">
+    <div className="ifo">
+      <span>Autodidata</span>
+    </div>
+    <div className="progress-line autodidata">
+      <span></span>
+    </div>
+  </div>
+</div>
 
-            <div className="bar">
+
+          {/* Idiomas */}
+
+          <div className="skillBar idiomas">
             <h4>Idiomas</h4>
-              <div className="infoBar">
-                <span className="icon brazil"></span>
-                
+
+            <div className="bar-idiomas">
+              <div className="inf">
+                <span className="icon brazil">
+                <img src="src\assets\images\transparent-logo-flag-of-brazil-green-angle-brazil-5e9b48f8740e58.1675191315872350644754.png" alt="bandeira do brasil" />
+                <span className="spanIdiomas">Português</span>
+              
+                </span>
+               
+             
               </div>
-              <div className="progress-line port" data-progress = "90" ><span></span></div>
+              <div className="progress-line brazil">
+                <span></span>
+              </div>
             </div>
+
+            <div className="bar-idiomas">
+              <div className="inf">
+               <span className="icon ingles">
+                <img src="src\assets\images\bandeira eua.png" alt="" />
+                <span className="spanIdiomas">Inglês</span>
+                 </span>
+                
+             
+              </div>
+              <div className="progress-line ingles">
+                <span></span>
+              </div>
+            </div>
+
+            {/* Adicione mais idiomas conforme necessário */}
           </div>
+
         </div>
       </section>
     </>

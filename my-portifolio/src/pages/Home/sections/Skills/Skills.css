@@ -26,9 +26,10 @@
  .titulos {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 2vh;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2vh;
  }
 
   .titulos h2 {
@@ -56,95 +57,291 @@ color: #adadad;
 
   /* -================= */
   .containerSkills {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    padding: 1rem 2rem;
-  
-    gap: 2rem;
     justify-content: center;
-/*   
-    transform: translateY(50px); Translação para baixo para animação de entrada */
-    /* transition: opacity 0.8s ease, transform 0.8s ease; */
-  }
-  
-  /* .containerSkills.aos-init {
-  
-  
-    /* transform: translateY(0); */
-
-
-
-
-  .skillsBar {
-    flex-direction: column;
-
-    background-color: #dbd5d596;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+   
   
   }
   
-  
- 
-  .skillBar h4 {
-    text-align: center;
-    align-items: center;
-    font-size: 1rem;
-  padding: 1rem 2rem;
-    background-color: rgb(70, 68, 68);
-  }
-  .bar {
-    flex-direction: column;
+  .skillBar {
+    display: flex;
     width: 20vw;
     height: 70vh;
     background-color: #29292996;
-    padding: 1rem; /* Adicionado padding para o conteúdo interno */
-    border-radius: 10px; /* Adicionado border-radius para melhor aparência */
+    padding: 1rem;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: transform 0.3s ease; /* Transição suave para a transformação */
-  }
-  .bar:hover {
+    transition: transform 0.3s ease;
+  flex-direction: column;
    
-    transform: scale(1.05); /* Aumenta em 5% o tamanho do card */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar */
-  z-index: 1; /* Move o card para frente */
   }
- 
-  .infoBar > span {
-font-size: 1rem;
-font-weight: 500;
-display: flex;
-padding: 1rem 2rem;
-align-items: center;
+  
+  .skillBar:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
   }
-  .progress-line html {
+  
+  .skillBar h4 {
+    text-align: left;
+    align-items: left;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    margin: 0.5rem 1rem;
+    background-color: #1010107d;
+  }
+  
+  .bar {
+    margin: 2vh 0;
+  }
+  
+  .ifo {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 0.2rem;
+    margin: 1vh 0;
+    
+  }
+  
+  .bx {
+    font-size: 40px;
+  }
+  
+  .spans {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .progress-line {
     position: relative;
-    height: 0.5rem;
+    border-radius: 10px;
     width: 100%;
-   background-color: #f0f0f0;
-   border-radius: 10px;
+    height: 0.5rem;
+    background-color: #f0f0f0;
   }
-  .progress-line html::before {
+  
+  .progress-line span {
     position: absolute;
-    content: "";
+    border-radius: 10px;
+    height: 100%;
+    background: #1653f2;
+    width: 0; /* Inicializa com largura zero para a animação */
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform-origin: left;
+  }
+  
+ 
+  
+
+  
+  @keyframes animate {
+    to {
+      width: 90%;
+    }
+  }
+  
+  .progress-line.html span {
+    animation: animateHtml 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes animateHtml {
+    to {
+      width: 90%;
+    }
+  }
+  
+  .progress-line.css span {
+    animation: animateCss 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes animateCss {
+    to {
+      width: 75%;
+    }
+  }
+  
+  .progress-line.js span {
+    animation: animateJs 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes animateJs {
+    to {
+      width: 60%;
+    }
+  }
+  
+  .progress-line.react span {
+    animation: animateReact 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes animateReact {
+    to {
+      width: 60%;
+    }
+  }
+  
+  .progress-line span::after {
+    font-size: 12px;
+    content: attr(data-content);
+    position: absolute;
+    padding: 1px 8px;
+    background-color: black;
+    color: #fff;
+    border-radius: 3px;
+    top: -28px;
     right: 0;
-    top: -10px;
+    opacity: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+  }
+  
+  @keyframes showText {
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .progress-line.html span::after {
+    content: "90%";
+  }
+  
+  .progress-line.css span::after {
+    content: "75%";
+  }
+  
+  .progress-line.js span::after {
+    content: "60%";
+  }
+  
+  .progress-line.react span::after {
+    content: "60%";
+  }
+  
+  .progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
     height: 0;
-    bottom: 0;
-    border: 0.5rem solid transparent;
+    border: 7px solid transparent;
     border-bottom-width: 0px;
     border-right-width: 0px;
     border-top-color: #000;
-  }
-  .bar .progress-line span:after {
-    position: absolute;
+    top: -10px;
     right: 0;
-    top: -28px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    padding: 1px 8px;
-    background: #000;
-    border-radius: 3px;
+    animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
   }
   
+  .progress-line.comunicacao span {
+    animation: animateComunicacao 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes  animateComunicacao {
+    to {
+      width: 85%;
+    }
+  }
+  .progress-line.colaboracao span {
+    animation: animateColaboracao 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes  animateColaboracao {
+    to {
+      width: 85%;
+    }
+  }
+  .progress-line.autodidata span {
+    animation: animateAutodidata 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes  animateAutodidata {
+    to {
+      width: 65%;
+    }
+  }
+  .progress-line.comunicacao span::after {
+    content: "85%";
+  }
+  
+  .progress-line.colaboracao span::after {
+    content: "85%";
+  }
+  
+  .progress-line.autodidata span::after {
+    content: "65%";
+  }
+  
+  .bar-softskills {
+    margin: 3vh 0;
+  }
+  .bar-idiomas {
+    margin: 3vh 0;
+  }
+
+  .progress-line.brazil span {
+    animation: animateBrazil 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes  animateBrazil {
+    to {
+      width: 100%;
+    }
+  }
+
+  .progress-line.brazil span::after {
+    content: "100%";
+  }
+
+
+  .progress-line.ingles span {
+    animation: animateingles 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes  animateingles {
+    to {
+      width: 65%;
+    }
+  }
+
+  .progress-line.ingles span::after {
+    content: "65%";
+  }
+  
+  .icon.brazil {
+    display: flex;
+    margin: 10px;
+   gap: 0.4rem;
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+
+  }
+  
+  .icon.brazil img {
+    width: 15%; /* Ajuste o tamanho da imagem conforme necessário */
+  }
+  
+  .spanIdiomas {
+    display: inline-block;
+    vertical-align: middle; /* Alinha verticalmente com a imagem */
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .icon.ingles {
+    display: flex;
+    margin: 10px;
+   gap: 0.4rem;
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+  }
+
+  .icon.ingles img {
+    width: 15%; /* Ajuste o tamanho da imagem conforme necessário */
+  }
+  
+
+ 
+
+ 

@@ -55,10 +55,15 @@ body {
 }
 
 .info span {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
   color: #adadad;
 }
 .linha-separadora1 {
-  width: 70%;
+  width: 78%;
   
   
   border: 1px solid #1653f2;

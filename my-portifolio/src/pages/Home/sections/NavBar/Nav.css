@@ -34,14 +34,23 @@ img {
     align-items: center;
     gap: 2rem;
   }
+  .link a {
+    font-size: 18px;
+  }
 
   @media (max-width: 768px) {
+    .nav-logo img  {
+      max-width: 80px;
+    }
     .nav-links {
       flex-direction: row;
       gap: 1rem;
     }
     .nav-logo {
       max-width: 120px;
+    }
+    .link a {
+      font-size: 10px;
     }
   }
 
