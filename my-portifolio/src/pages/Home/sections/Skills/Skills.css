@@ -36,7 +36,7 @@
     filter: drop-shadow(1px 1px 20px var(--azul));
 
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: var(--azul);
   }
   .titulos span {
@@ -107,7 +107,7 @@ color: #adadad;
     
   }
   
-  .bx {
+  .bxl-html5 , .bxl-css3 , .bxl-javascript , .bxl-react{
     font-size: 40px;
   }
   

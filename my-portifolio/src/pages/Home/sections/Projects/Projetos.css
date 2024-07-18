@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--cinza);
+}
+
+.projetos {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 60px 150px;
+  background-color: #121214;
+}
+
+.subtitulo {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitulo h2 {
+  filter: drop-shadow(1px 1px 20px var(--azul));
+  text-align: center;
+  font-size: 2.6rem;
+  color: var(--azul);
+}
+
+.subtitulo span {
+  color: #adadad;
+}
+
+.linha-projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #575758;
+  margin: 1px auto;
+}
+
+.cards-projeto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centraliza os cards horizontalmente */
+ 
+
+  margin: 2rem auto; /* Margem superior e inferior ajustável */
+}
+
+.card-projeto {
+  
+  display: flex;
+  background-color: #29292996;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 70vw;
+  height: 40vh;
+  padding: 40px;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+.date {
+
+  font-weight: 500;
+  color: #fff;
+  border-radius: 0 8px 8px 0; /* Opcional: Adicione bordas arredondadas no canto inferior direito */
+}
+
+.card-projeto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.date span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.projeto-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+
+}
+.bx-task {
+font-size: 100px;
+
+}
+
+
+.projeto-titulo h3 {
+  display: flex;
+  flex-direction: row;
+
+justify-content: space-between;
+align-items: center;
+;
+
+
+
+  font-size: 1.8vw;
+  background: linear-gradient(45deg, #1653f2, #1653f2, #373760);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.projeto-titulo p {
+  max-width:  700px;;
+
+ 
+  font-size: 1vw;
+  color: #ddd;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.projeto-titulo span {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+}

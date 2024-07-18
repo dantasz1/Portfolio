@@ -85,3 +85,9 @@
     text-align: center;
     flex-grow: 1;
   }
+  .linha-horizontal {
+    border: none;
+    border-top: 2px solid #000; /* Cor e espessura da linha */
+    
+    width: 100%; /* Largura da linha */
+}

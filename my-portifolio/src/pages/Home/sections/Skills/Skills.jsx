@@ -33,6 +33,7 @@ const Skills = () => {
   return (
     <>
       <section id="skills" data-aos="zoom-in" data-aos-duration="10000">
+        
         <div className="titulos">
           <h2 className="textSkills">&lt; Skills &gt;</h2>
           <span>Skills técnicas e pessoais</span>

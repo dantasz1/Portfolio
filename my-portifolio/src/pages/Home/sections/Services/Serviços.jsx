@@ -44,6 +44,8 @@ const Servicos  = () => {
 
 </div>
 </div>
+<hr className="linha-horizontal"/>
+
 </section>
 </>
     )
