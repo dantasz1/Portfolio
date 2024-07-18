@@ -4,32 +4,64 @@ import { useState } from "react";
 function Contato() {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
-  const [messagem, setMensagem] = useState("");
+  const [mensagem, setMensagem] = useState("");
 
-  return(
+  return (
+    <>
+   <section id="myself">
 
-<section className="contato">
-<div className="textosContato">
-<h2>Precisa de um <span id="textoDev">Desenvolvedor Júnior?</span></h2>
-<h3>Vamos trabalhar juntos!</h3>
-        </div>
- <form className="form">
-<input className="input" 
-type="text" 
-placeholder="Digite seu nome " 
-onChange={(e) => setNome(e.target.value)} value={nome} />
+   
+    <hr />
+    <div className="container">
+    {/* <div className="work">
+      <span>Disponibilidade</span>
+      <p>Atualmente, estou aberto a opções de estágio ou trabalhar como desenvolvedor ReactJs. Mande-me um email ao lado para conversarmos melhor.</p>
+    </div>
+    <div className="containerInfos">
+      <span>Redes Sociais</span>
 
-<input type="text"  
-placeholder="Digite seu Email" 
-onChange={(e) => setEmail(e.target.value)}
- value={email}/>
+    </div> */}
+     <div className="textosContato">
+  <span>
+    Precisa de um <span className="textoDev">Desenvolvedor Júnior?</span>
+  </span>
+  <span>Vamos trabalhar juntos!</span>
+</div>
+      
+      <h1 className="title">Contato</h1>
 
-<input type="text" placeholder="Digite uma mensagem" onChange={(e) => setMensagem(e.target.value)} value={messagem} />
- </form>
+      <form className="form" onSubmit={() => {}}>
+        <label htmlFor="">Nome:</label>
+        <input 
+          className="input"
+          type="text"
+          placeholder="Digite seu nome"
+          onChange={(e) => setNome(e.target.value)}
+          value={nome}
+        />
+        <label htmlFor="">Email:</label>
+        <input 
+          className="input"
+          type="text"
+          placeholder="Digite seu email"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+        />
+<label htmlFor="">Mensagem:</label>
+        <textarea 
+          className="textarea"
+          placeholder="Digite sua mensagem..."
+          onChange={(e) => setMensagem(e.target.value)}
+          value={mensagem}
+        />
 
-</section>
+        <input className="button" type="submit" value="Enviar" />
+      </form>
 
-  ) 
+    </div>
+    </section>
+    </>
+  );
 }
 
 export default Contato;

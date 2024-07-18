@@ -19,7 +19,7 @@ const Servicos  = () => {
 <div className="card">
 <img src={undrawWeb} alt="Imagem 1"/>
 <div className="card-conteudo">
-  <h3>Desenvolvimento de websites.</h3>
+  <span>Desenvolvimento de websites.</span>
   <p>- Criação de websites modernos e responsivos seguindo o padrão de escolha do cliente</p>
 </div>
 
@@ -27,7 +27,7 @@ const Servicos  = () => {
 <div className="card">
 <img src={undrawDesign} alt="Imagem 2"/>
 <div className="card-conteudo">
-  <h3>UI/UX.</h3>
+  <span>UI/UX.</span>
   <p>- Prototipagem Interativa</p>
   <p>- Arquitetura de Software</p>
   <p>- Design Interface</p>
@@ -38,7 +38,7 @@ const Servicos  = () => {
 <div className="card">
 <img src={undrawSite} alt="Imagem 3"/>
 <div className="card-conteudo">
-  <h3>Manutenção de sites.</h3>
+  <span>Manutenção de sites.</span>
   <p>- Serviços de manutenção para garantir que seu site esteja sempre atualizado, seguro e funcionando corretamente, incluindo correções de bugs e otimização de desempenho.</p>
 </div>
 
