@@ -6,6 +6,7 @@ import  "../About/About.css";
 const About = () => {
     return (
 <section id="Andre">
+<div className="spacer layer1"></div>
   <div className="info">
     <h2> &lt; Sobre mim &gt;</h2>
     <span>Conheça mais sobre mim</span>
@@ -31,7 +32,7 @@ const About = () => {
       <img id="fotoAndre" src={Foto} alt="Foto de André" />
     </div>
   </div>
-  <div className="spacer layer1"></div>
+  
 </section>
 
     )

@@ -91,3 +91,12 @@
     
     width: 100%; /* Largura da linha */
 }
+
+@media (max-width: 768px) {
+.cards {
+  justify-content:center ;
+  
+  align-items: center;
+  flex-direction: column;
+}
+}

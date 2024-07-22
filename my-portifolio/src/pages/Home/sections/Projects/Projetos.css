@@ -76,6 +76,7 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease;
   margin-bottom: 20px;
+ 
 }
 
 
@@ -133,3 +134,4 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+

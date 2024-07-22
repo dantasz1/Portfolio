@@ -1,21 +1,23 @@
+import  { useEffect, useState } from 'react';
 import './Projetos.css';
 import imagemFundoLoja from '../../../../assets/images/lojaDeRoupas.png';
 import imagemFundoBarbearia from '../../../../assets/images/barbearia.png';
 import imagemFundoCadastro from '../../../../assets/images/cadastroDeUsuarios.png';
-import pontinhos from '../../../../assets/images/pontinhos.png'
-import { useState } from 'react';
-
+import pontinhos from '../../../../assets/images/pontinhos.png';
+import ScrollReveal from 'scrollreveal';
 
 const Projetos = () => {
-  
-  // Estado para controlar o hover
   const [cardHoverado, setCardHoverado] = useState(null);
 
-  // Funções para definir e limpar o hover
+  useEffect(() => {
+    ScrollReveal().reveal('#Andre', { duration: 1000, reset: true })
+    ScrollReveal().reveal('.card-projeto', { duration: 1000, reset: true });
+   
+  }, []);
+
   const lidarComMouseEntrar = (imagem) => setCardHoverado(imagem);
   const lidarComMouseSair = () => setCardHoverado(null);
 
-  // Estilos base para cada card
   const estiloCard = (imagemFundo, posicaoHover, posicaoInicial) => ({
     backgroundImage: `url(${imagemFundo})`,
     backgroundSize: 'cover',
@@ -25,53 +27,40 @@ const Projetos = () => {
   });
 
   return (
-    <section className="projetos">
+    <section className="projetos" id='projetos'>
       <div className="subtitulo">
         <h2>Projetos</h2>
         <span>Veja minhas criações</span>
         <hr className="linha-projetos" />
       </div>
-
       <div className="cards-projeto">
         <a
-          className="card-projeto"
+          className="card-projeto 1"
           href="https://dantasz1.github.io/Projeto-FInal-/"
-          style={estiloCard(imagemFundoLoja, 'center', 'left top')} // Imagem se ajusta ao centro no hover e ocupa toda a área do card
+          style={estiloCard(imagemFundoLoja, 'center', 'left top')}
           onMouseEnter={() => lidarComMouseEntrar(imagemFundoLoja)}
           onMouseLeave={lidarComMouseSair}
-        >
-          
-        </a>
-
+        ></a>
         <a
-          className="card-projeto"
+          className="card-projeto 2"
           href="https://barbeariapremium.netlify.app"
-          style={estiloCard(imagemFundoBarbearia, 'center', 'center 13%')} // Imagem começa um pouco abaixo e move para o centro no hover
+          style={estiloCard(imagemFundoBarbearia, 'center', 'center 13%')}
           onMouseEnter={() => lidarComMouseEntrar(imagemFundoBarbearia)}
           onMouseLeave={lidarComMouseSair}
-        >
-         
-        </a>
-
+        ></a>
         <a
-          className="card-projeto"
+          className="card-projeto 3"
           href="https://dantasz1.github.io/Projeto-FInal-/"
-          style={estiloCard(imagemFundoCadastro, '10% 45%', 'center')}
+          style={estiloCard(imagemFundoCadastro, 'center', 'center')}
           onMouseEnter={() => lidarComMouseEntrar(imagemFundoCadastro)}
           onMouseLeave={lidarComMouseSair}
-        >
-          
-        </a>
-
+        ></a>
         <a
-          className="card-projeto"
-          
-          style ={estiloCard(pontinhos, 'center', 'center')}
+          className="card-projeto 4"
+          style={estiloCard(pontinhos, 'center', 'center')}
           onMouseEnter={() => lidarComMouseEntrar(pontinhos)}
           onMouseLeave={lidarComMouseSair}
-        >
-         
-        </a>
+        ></a>
       </div>
     </section>
   );

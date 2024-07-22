@@ -59,7 +59,7 @@ color: #adadad;
   .containerSkills {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    
     gap: 2rem;
     
    
@@ -76,7 +76,7 @@ color: #adadad;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: transform 0.3s ease;
   flex-direction: column;
-   
+  flex: 0.2 0 200px
   }
   
   .skillBar:hover {
@@ -340,8 +340,60 @@ color: #adadad;
   .icon.ingles img {
     width: 15%; /* Ajuste o tamanho da imagem conforme necessário */
   }
+  @media (max-width: 1280px) {
+    .containerSkills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+    }
   
-
- 
+    .skillBar {
+      width: 80%; /* Ajuste a largura para se adaptar melhor em telas menores */
+      max-width: 500px; /* Define um limite máximo para a largura */
+      height: auto; /* Permite que a altura se ajuste conforme o conteúdo */
+      flex: 1 1 300px; /* Flex-grow e flex-shrink são ajustados para maior flexibilidade */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skillBar {
+      width: 90%; /* Maior adaptação para telas muito pequenas */
+      height: auto; /* Altura ajustada automaticamente */
+    }
+  
+    .titulos h2 {
+      font-size: 2rem; /* Reduz o tamanho da fonte para cabeçalhos em telas menores */
+    }
+  
+    .titulos span {
+      font-size: 0.9rem; /* Ajusta o tamanho da fonte para o subtítulo */
+    }
+  
+    .linha-separadora2 {
+      width: 20%; /* Reduz a largura da linha separadora em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skillBar {
+      width: 100%; /* Ocupa toda a largura disponível em telas pequenas */
+      height: auto; /* Mantém a altura ajustada conforme o conteúdo */
+    }
+  
+    .titulos h2 {
+      font-size: 1.5rem; /* Reduz ainda mais o tamanho da fonte para cabeçalhos */
+    }
+  
+    .titulos span {
+      font-size: 0.8rem; /* Ajusta o tamanho da fonte para o subtítulo */
+    }
+  
+    .linha-separadora2 {
+      width: 30%; /* Aumenta a largura da linha separadora para melhor visibilidade */
+    }
+  }
+  
 
  

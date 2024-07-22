@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
-
-
-
-
 * {
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -18,38 +14,27 @@ body {
   background-color: var(--cinza);
 }
 
-/* Importação de fontes e estilos adicionais omitidos para brevidade */
-
-
 #Andre {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  overflow: hidden;
-  width: 100%;
-  padding: 0.8vh 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 2vh 0; /* Aumenta o padding superior e inferior */
 }
 
 .info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; /* Centraliza o texto */
-  
+  text-align: center;
 }
 
 .info h2 {
- filter:drop-shadow(1px 1px 20px var(--azul)); 
+  filter: drop-shadow(1px 1px 20px var(--azul)); 
   font-size: 3rem;
-  
   background-image: linear-gradient(45deg, #1653f2, #1653f2, #1c1c92);
   background-clip: text;
-  -webkit-background-clip: text; /* Adiciona suporte para WebKit */
+  -webkit-background-clip: text; /* Suporte para WebKit */
   color: transparent;
   text-transform: uppercase;
 }
@@ -62,29 +47,31 @@ body {
   font-size: 20px;
   color: #adadad;
 }
+
 .linha-separadora1 {
   width: 78%;
-  
-  
   border: 1px solid #1653f2;
 }
 
 .textoEFoto {
   display: flex;
+  flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
   align-items: center;
   max-width: 1440px;
   width: 100%;
-  
- justify-content: center;
+  justify-content: center;
+  gap: 2rem; /* Adiciona espaçamento entre o texto e a foto */
+  margin-top: 2rem; /* Espaço acima do bloco de texto e foto */
+  padding: 0 2rem; /* Adiciona padding lateral ao bloco */
 }
 
 .texto {
-  width: 40vw; /* Largura do texto em viewport width */
-  padding: 20px;
+  flex: 1 1 40vw; /* Flexível para se ajustar ao espaço disponível */
+  padding: 20px; /* Adiciona padding interno para o texto */
+  margin: 0 1rem; /* Espaçamento ao redor do bloco de texto */
   color: #949494;
   border-radius: 8px;
-  margin-right: 2rem; /* Espaçamento entre texto e imagem */
-  
+  background-color: transparent; /* Mantém a cor de fundo transparente */
 }
 
 .texto strong {
@@ -93,53 +80,57 @@ body {
 
 .texto p {
   font-size: 17px; /* Tamanho da fonte do texto */
-  line-height: 1.8; /* Altura da linha do texto */
 }
 
 .minhaFoto {
-  
   width: 300px; /* Largura fixa da foto */
   height: 300px; /* Altura fixa da foto */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -1rem; /* Ajusta a foto para cima com margem negativa */
 }
 
 .minhaFoto img {
-  
   width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-  max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+  max-width: 90%; /* Garante que a imagem não ultrapasse o contêiner */
   border: 10px double #fff;
   border-radius: 50%;
   overflow: hidden;
- 
-
 }
-
 
 #fotoAndre {
   opacity: 2;
   transition: opacity 0.5s ease; 
-
 }
+
 #fotoAndre:hover {
-  opacity: 0.5 ;
+  opacity: 0.5;
 }
 
-@media  (max-width:768px) {
+@media (max-width: 768px) {
   .minhaFoto {
     display: none;
   }
+
+  .texto {
+    flex: 1 1 100%; /* Ajusta a largura do texto em telas menores */
+    margin: 0 0; /* Remove o espaçamento lateral */
+    padding: 20px; /* Adiciona padding ao redor do texto em telas pequenas */
+  }
+
+  .textoEFoto {
+    justify-content: center;
+    flex-direction: column; /* Empilha texto e foto verticalmente em telas pequenas */
+    margin-top: 0; /* Remove o espaçamento superior em telas pequenas */
+    padding: 0 1rem; /* Adiciona padding lateral reduzido em telas pequenas */
+  }
 }
-  
+
 .layer1 {
-
- background-image: url(../../../../assets/images/blob.svg);
-
- height: 20vh;
+  background-image: url(../../../../assets/images/blob.svg);
+  height: 20vh;
   width: 100%;
-  
   background-position: center;
-    background-size: cover;
-
+  background-size: cover;
 }
