@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   align-items: center; /* Centraliza verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
-  padding: 60px 150px;
+ 
   background-color: #121214;
 }
 

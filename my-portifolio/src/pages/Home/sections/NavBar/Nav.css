@@ -1,92 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
-  }
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: "Poppins", sans-serif;
-    background-color: var(--cinza);
-  }
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--cinza);
+}
 
 img {
-    width: 100%;
-    display: flex;}
+  width: 100%;
+  display: flex;
+}
 
-  nav {  max-width: 1440px;
-    margin: auto;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;}
+nav {
+  max-width: 1440px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .nav-logo {
-    max-width: 150px;
+.nav-logo {
+  max-width: 150px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link a {
+  font-size: 18px;
+}
+
+#hamburger {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 24px; /* Aumentar o tamanho do ícone do hambúrguer */
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-logo img {
+    max-width: 80px;
   }
   .nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+    display: none;
   }
-  .link a {
-    font-size: 18px;
+  #hamburger {
+    display: block;
   }
-
-  @media (max-width: 768px) {
-    .nav-logo img  {
-      max-width: 80px;
-    }
-    .nav-links {
-      flex-direction: row;
-      gap: 1rem;
-    }
-    .nav-logo {
-      max-width: 120px;
-    }
-    .link a {
-      font-size: 10px;
-    }
-  }
-
-  a {
-    color: var(--branco);   
-    text-decoration: none;
-    margin-right: 20px;
-   
-  }
-  
-  a:hover {
-    color: var(--azul);
-    list-style-type: none;
-    text-decoration: none;
-  }
-  
-  
-  
-  .link a {
-    position: relative;
-    padding-bottom: 0.75rem;
-    color: #fff;
-  }
-  
-  .link a::after {
-    content: "";
+  .mobile-menu {
+    display: none;
     position: absolute;
-    height: 2px;
-    width: 0;
-    bottom: 0;
+    top: 12vh;
     left: 0;
-    background-color: var(--azul);
-    transition: all 0.3s ease;
+    width: 100%;
+    background-color: #252525;
+    padding: 1rem;
+    box-sizing: border-box;
+    list-style: none; /* Remove as bolinhas */
   }
-  
-  .link a:hover::after {
-    width: 70%;
+  .mobile-menu.open {
+    display: block;
   }
-  
+  .mobile-menu li {
+    text-align: center;
+    padding: 0.5rem 0;
+    list-style: none; /* Remove as bolinhas */
+  }
+  .mobile-menu a {
+    color: #fff; /* Cor do texto branco */
+    text-decoration: none;
+  }
+}
+
+a {
+  color: var(--branco);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+a:hover {
+  color: var(--azul);
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--azul);
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 70%;
+}
