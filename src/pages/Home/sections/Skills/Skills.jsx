@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import "../Skills/Skills.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import logoBrazil from "../../../../assets/images/brazil.svg"
+import logoEUA from "../../../../assets/images/bandeira-eua.png"
 const Skills = () => {
   const [visivel, setVisivel] = useState(false);
 
@@ -130,7 +131,7 @@ const Skills = () => {
             <div className="bar-idiomas">
               <div className="inf">
                 <span className="icon brazil">
-                <img src="src\assets\images\transparent-logo-flag-of-brazil-green-angle-brazil-5e9b48f8740e58.1675191315872350644754.png" alt="bandeira do brasil" />
+                <img src={logoBrazil} alt="bandeira do brasil" />
                 <span className="spanIdiomas">Português</span>
               
                 </span>
@@ -145,7 +146,7 @@ const Skills = () => {
             <div className="bar-idiomas">
               <div className="inf">
                <span className="icon ingles">
-                <img src="src\assets\images\bandeira eua.png" alt="" />
+                <img src={logoEUA} alt="bandeira dos estados unidos" />
                 <span className="spanIdiomas">Inglês</span>
                  </span>
                 
