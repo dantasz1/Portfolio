@@ -20,7 +20,8 @@
     "react-dom": "^18.2.0",
     "react-scroll": "^1.9.0",
     "scrollreveal": "^4.0.9",
-    "typed.js": "^2.1.0"
+    "typed.js": "^2.1.0",
+    "vite-plugin-vercel": "^8.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
