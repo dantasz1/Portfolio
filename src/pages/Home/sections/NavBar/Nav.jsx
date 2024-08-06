@@ -17,24 +17,34 @@ const Nav = () => {
       </div>
       <ul className="nav-links">
         <li id="link1" className="link">
-        <Link activeClass="active" to="home" spy={true} smooth={true} offset={-1000}  duration={1000} >&lt;Home&gt;</Link>
+          <Link activeClass="active" to="home" spy={true} smooth={true} offset={-1000} duration={1000} >&lt;Home&gt;</Link>
         </li>
         <li id="link2" className="link">
-        <Link activeClass="active" to="Andre" spy={true} smooth={true} offset={-100}  duration={1000} >&lt;Sobre Mim&gt;</Link>
+          <Link activeClass="active" to="Andre" spy={true} smooth={true} offset={-100} duration={1000} >&lt;Sobre Mim&gt;</Link>
         </li>
         <li id="link3" className="link">
-        <Link activeClass="active" to="projetos" spy={true} smooth={true} offset={-100}  duration={1000} >&lt;Projetos&gt;</Link>
+          <Link activeClass="active" to="projetos" spy={true} smooth={true} offset={-100} duration={1000} >&lt;Projetos&gt;</Link>
         </li>
         <li id="link4" className="link">
-        <Link activeClass="active" to="myself" spy={true} smooth={true} offset={50}  duration={1000} >&lt;Contato&gt;</Link>
+          <Link activeClass="active" to="myself" spy={true} smooth={true} offset={50} duration={1000} >&lt;Contato&gt;</Link>
         </li>
       </ul>
       <button id="hamburger" className="fa fa-bars" onClick={toggleMenu}></button>
       <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
-        <li id="link1"><a href="/">&lt;Inicio&gt;</a></li>
-        <li id="link2"><a href="/">&lt;Sobre mim&gt;</a></li>
-        <li id="link3"><a href="/">&lt;Projetos&gt;</a></li>
-        <li id="link4"><a href="/">&lt;Contato&gt;</a></li>
+        <ul>
+          <li id="link1">
+            <Link activeClass="active" to="home" spy={true} smooth={true} offset={-1000} duration={1000} onClick={toggleMenu}>&lt;Inicio&gt;</Link>
+          </li>
+          <li id="link2">
+            <Link activeClass="active" to="Andre" spy={true} smooth={true} offset={-100} duration={1000} onClick={toggleMenu}>&lt;Sobre mim&gt;</Link>
+          </li>
+          <li id="link3">
+            <Link activeClass="active" to="projetos" spy={true} smooth={true} offset={-100} duration={1000} onClick={toggleMenu}>&lt;Projetos&gt;</Link>
+          </li>
+          <li id="link4">
+            <Link activeClass="active" to="myself" spy={true} smooth={true} offset={50} duration={1000} onClick={toggleMenu}>&lt;Contato&gt;</Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
