@@ -217,6 +217,7 @@ body {
     height: 50px;
     margin: 0px auto;
     background-color: var(--azul);
+
   }
 @media (max-width:1200px) {
 
@@ -243,8 +244,8 @@ body {
     #ola {
       display: flex;
       justify-content: start;
-      margin-left: 15px;
-      font-size: 15px;
+      margin-left: 18px;
+      font-size: 14px;
       color: var(--branco);
     }
 
@@ -288,7 +289,7 @@ body {
       display: none;
     }
   }
-  @media (max-width: 390px) {
+  @media (max-width: 480px) {
     #ola {
       display: flex;
       justify-content: start;

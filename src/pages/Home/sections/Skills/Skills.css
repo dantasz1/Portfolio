@@ -394,7 +394,7 @@ color: #adadad;
       width: 30%; /* Aumenta a largura da linha separadora para melhor visibilidade */
     }
   }
-  @media (max-width: 390px) {
+  @media (max-width: 480px) {
     .skillBar {
       width: 300px;
     }

@@ -126,7 +126,7 @@ body {
     padding: 0 1rem; /* Adiciona padding lateral reduzido em telas pequenas */
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 480px) {
   .minhaFoto {
     display: none;
   }
