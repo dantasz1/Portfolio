@@ -93,6 +93,7 @@ function Contato() {
             <input className="button" type="submit" value="Enviar" />
           </form>
         </div>
+       
       </section>
     </>
   );

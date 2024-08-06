@@ -30,17 +30,15 @@ body {
 }
 
 .containerTitle {
-  font-size: 2rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 4rem;
 }
 
-.nome-completo {
 
-  white-space: nowrap;
-}
+
 
 #ola {
   font-size: 15px;
@@ -221,6 +219,7 @@ body {
     background-color: var(--azul);
   }
 @media (max-width:1200px) {
+
   #text-gradient {
     text-align: center;
     font-size: 50px;
@@ -242,19 +241,22 @@ body {
   @media (max-width: 768px) {
 
     #ola {
-      font-size: 10px;
+      display: flex;
+      justify-content: start;
+      margin-left: 15px;
+      font-size: 15px;
       color: var(--branco);
     }
 
     #text-gradient {
       text-align: center;
       font-size: 30px;
-      margin-right: 1vw;
+    margin-left: 15px;
       color: #fff;
       font-weight: bold;
     }
     .h3multiple {
-      font-size: 12px;
+      font-size: 15px;
       color: var(--branco);
     
     }
@@ -264,7 +266,7 @@ body {
     .multiple-text {
       font-weight: bold;
       background: linear-gradient(45deg, #1653f2, #1653f2, #1c1c92);
-      font-size: 12px;
+      font-size: 15px;
       color: #fff;
       -webkit-background-clip: text;
       background-clip: text;
@@ -282,4 +284,56 @@ body {
     #iIcons {
       font-size: 1rem;
     }
+    .icons-contato {
+      display: none;
+    }
   }
+  @media (max-width: 390px) {
+    #ola {
+      display: flex;
+      justify-content: start;
+      margin-left: 15px;
+      font-size: 10px;
+      color: var(--branco);
+    }
+
+    #text-gradient {
+      text-align: center;
+      font-size: 25px;
+    margin-left: 15px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .h3multiple {
+      font-size: 10px;
+      color: var(--branco);
+    
+    }
+    .span {
+      text-align: left;
+    }
+    .multiple-text {
+      font-weight: bold;
+      background: linear-gradient(45deg, #1653f2, #1653f2, #1c1c92);
+      font-size: 12px;
+      color: #fff;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+    
+    #sobrenome {
+      font-size: 20px;
+      font-weight: bold;
+      background: linear-gradient(45deg, #1653f2, #1653f2, #373760);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      gap: 1vw;
+    }
+    #iIcons {
+      font-size: 1rem;
+    }
+    .icons-contato {
+      display: none;
+    }
+   }

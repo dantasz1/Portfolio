@@ -394,6 +394,18 @@ color: #adadad;
       width: 30%; /* Aumenta a largura da linha separadora para melhor visibilidade */
     }
   }
-  
+  @media (max-width: 390px) {
+    .skillBar {
+      width: 300px;
+    }
+    .containerSkills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+   
+  }
 
  

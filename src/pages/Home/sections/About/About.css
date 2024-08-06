@@ -126,7 +126,56 @@ body {
     padding: 0 1rem; /* Adiciona padding lateral reduzido em telas pequenas */
   }
 }
+@media (max-width: 390px) {
+  .minhaFoto {
+    display: none;
+  }
 
+  .texto {
+    flex: 1 1 100%; /* Ajusta a largura do texto em telas menores */
+    margin: 0 0; /* Remove o espaçamento lateral */
+    padding: 20px; /* Adiciona padding ao redor do texto em telas pequenas */
+  }
+
+  .textoEFoto {
+    justify-content: center;
+    flex-direction: column; /* Empilha texto e foto verticalmente em telas pequenas */
+    margin-top: 0; /* Remove o espaçamento superior em telas pequenas */
+    padding: 0 1rem; /* Adiciona padding lateral reduzido em telas pequenas */
+  }
+  .texto p {
+    font-size: 14px; /* Tamanho da fonte do texto */
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .info h2 {
+    filter: drop-shadow(1px 1px 20px var(--azul)); 
+    font-size: 1.6rem;
+    background-image: linear-gradient(45deg, #1653f2, #1653f2, #1c1c92);
+    background-clip: text;
+    -webkit-background-clip: text; /* Suporte para WebKit */
+    color: transparent;
+    text-transform: uppercase;
+  }
+  
+  .info span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #adadad;
+  }
+  .linha-separadora1 {
+    width: 100%;
+    border: 1px solid #1653f2;
+  }
+}
 .layer1 {
   background-image: url(../../../../assets/images/blob.svg);
   height: 20vh;
